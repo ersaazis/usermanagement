@@ -1,0 +1,36 @@
+{
+    "name": "ersaazis/usermanagement",
+    "description": "Package UserManagement",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ersaazis",
+            "email": "eam24maret@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ersaazis\\usermanagement\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ersaazis\\usermanagement\\Providers\\UserManagementServiceProvider"
+            ],
+            "aliases": [
+                {
+                  "alias": "DH",
+                  "facade": "ersaazis\\usermanagement\\helpler\\DataHotelHelpler"
+                }
+              ]
+        }
+    },
+    "require": {
+        "php":"^7.1.3",
+        "laravel/framework":"^5.7|^5.8|^6.0",
+        "ersaazis/cb":"1.*"
+    }
+}
