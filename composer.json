@@ -12,20 +12,14 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "ersaazis\\usermanagement\\": "src"
+            "ersaazis\\usermanagement\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "ersaazis\\usermanagement\\Providers\\UserManagementServiceProvider"
-            ],
-            "aliases": [
-                {
-                  "alias": "DH",
-                  "facade": "ersaazis\\usermanagement\\helpler\\DataHotelHelpler"
-                }
-              ]
+            ]
         }
     },
     "require": {
