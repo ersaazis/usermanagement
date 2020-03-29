@@ -20,14 +20,14 @@ class UserManagementController extends \ersaazis\cb\controllers\Controller
 
     public function __construct()
     {
-        view()->share(['page_title'=>'User Management']);
+        view()->share(['page_title'=>'User Manajement']);
     }
 
     private function myPrivileges(){
         if(cb()->session()->id()){
             $menu = cb()->find("cb_menus",[
                 "type"=>'path',
-                "name"=>'User Management'
+                "name"=>'User Manajement'
             ]);
             $privilege = cb()->find("cb_role_privileges",[
                 "cb_menus_id"=>$menu->id,
