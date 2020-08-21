@@ -13,7 +13,7 @@ use ersaazis\cb\helpers\ModuleGenerator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class UserManagementController extends \ersaazis\cb\controllers\Controller
+class AdminUserManagementController extends \ersaazis\cb\controllers\Controller
 {
 
     private $view = "usermanagement::users";
@@ -23,7 +23,7 @@ class UserManagementController extends \ersaazis\cb\controllers\Controller
         view()->share(['page_title'=>'User Manajement']);
     }
 
-    private function myPrivileges(){
+    public function myPrivileges(){
         if(cb()->session()->id()){
             $menu = cb()->find("cb_menus",[
                 "type"=>'path',
