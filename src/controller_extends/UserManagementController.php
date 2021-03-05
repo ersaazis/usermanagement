@@ -10,7 +10,7 @@ namespace ersaazis\usermanagement\controllers;
 
 use Illuminate\Support\Facades\DB;
 
-class UserManagementController extends \ersaazis\usermanagement\controllers\UserManagementController
+class UserManagementController extends \ersaazis\usermanagement\controllers\AdminUserManagementController
 {
 
 }
