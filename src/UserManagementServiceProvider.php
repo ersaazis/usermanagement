@@ -1,6 +1,6 @@
 <?php
 
-namespace ersaazis\usermanagement\Providers;
+namespace ersaazis\usermanagement;
 
 use Illuminate\Support\ServiceProvider;
 
