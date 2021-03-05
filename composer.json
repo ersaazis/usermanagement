@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ersaazis\\usermanagement\\Providers\\UserManagementServiceProvider"
+                "ersaazis\\usermanagement\\UserManagementServiceProvider"
             ]
         }
     },
